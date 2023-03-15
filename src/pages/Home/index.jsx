@@ -26,7 +26,6 @@ export function Home() {
   }
 
   useEffect(() => {
-    // array -> gurader estados que o useEffect depende
     fetch("https://api.github.com/users/thiagogquinto")
       .then(response => response.json())
         .then(data => {
